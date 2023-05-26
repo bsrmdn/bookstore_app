@@ -10,9 +10,9 @@ void main() => runApp(BookStore());
 class BookStore extends StatefulWidget {
   List mainPages = [
     const Home(),
-    const BookPage(),
     const NoPage(),
-    Profile(),
+    const NoPage(),
+    Profile("", ""),
   ];
 
   BookStore({super.key});

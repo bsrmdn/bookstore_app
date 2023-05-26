@@ -7,8 +7,10 @@ import 'package:google_fonts/google_fonts.dart';
 class Profile extends StatelessWidget {
   String avatars = "assets/img/avatars/";
   String books = "assets/img/books/";
+  String picture = "";
+  String author = "";
 
-  Profile({super.key});
+  Profile(this.picture, this.author, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,22 +23,30 @@ class Profile extends StatelessWidget {
         ),
         Column(
           children: [
-            CircleAvatar(
-              backgroundColor: Colors.black26,
-              radius: 64.5,
+            Hero(
+              tag: "avatar$picture",
               child: CircleAvatar(
                 backgroundColor: Colors.black26,
-                backgroundImage: AssetImage("${avatars}default.jpg"),
-                foregroundImage: AssetImage("${avatars}monka.jpeg"),
-                radius: 64,
+                radius: 64.5,
+                child: CircleAvatar(
+                  backgroundColor: Colors.black26,
+                  backgroundImage: AssetImage("${avatars}default.jpg"),
+                  foregroundImage: picture != ""
+                      ? AssetImage("$avatars$picture")
+                      : AssetImage("${avatars}monka.jpeg"),
+                  radius: 64,
+                ),
               ),
             ),
             const SizedBox(
               height: 16,
             ),
-            Text(
-              "Monka",
-              style: h2,
+            Hero(
+              tag: "author$author",
+              child: Text(
+                author != "" ? author : "Monka",
+                style: h2,
+              ),
             ),
             const SizedBox(
               height: 8,
@@ -151,33 +161,39 @@ class Profile extends StatelessWidget {
                 physics: const BouncingScrollPhysics(),
                 children: [
                   BookBanner(
-                    image: "little-fires-everwhere.png",
+                    tag: "${author}boooook1",
+                    bookImg: "little-fires-everwhere.png",
                     bookName: "Little Fires Everywhere",
                     authorName: "Celeste Ng",
                   ),
                   BookBanner(
-                    image: "all-the-pretty-horses.png",
+                    tag: "${author}boooook2",
+                    bookImg: "all-the-pretty-horses.png",
                     bookName: "All the Pretty Horses",
                     authorName: "Cormac McCarthy",
                   ),
                   BookBanner(
-                    image: "the-handmaid's-tales.png",
+                    tag: "${author}boooook3",
+                    bookImg: "the-handmaid's-tales.png",
                     bookName: "The Handmaid's Tale",
                     authorName: "Margaret Atwood",
                   ),
                   BookBanner(
-                    image: "conversations-with-friends.png",
+                    tag: "${author}boooook4",
+                    bookImg: "conversations-with-friends.png",
                     bookName: "Conversations with Friends",
                     authorName: "Sally Rooney",
                     price: 12.90,
                   ),
                   BookBanner(
-                    image: "the-world-doesn't-require.png",
+                    tag: "${author}boooook5",
+                    bookImg: "the-world-doesn't-require.png",
                     bookName: "The world doesn't require you",
                     authorName: "Rion Amilcar Scott",
                   ),
                   BookBanner(
-                    image: "the-last-widow.png",
+                    tag: "${author}boooook6",
+                    bookImg: "the-last-widow.png",
                     bookName: "The last widow",
                     authorName: "Karin Slaughter",
                   ),

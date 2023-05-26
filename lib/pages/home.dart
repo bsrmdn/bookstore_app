@@ -269,18 +269,21 @@ class Home extends StatelessWidget {
                 physics: const BouncingScrollPhysics(),
                 children: [
                   BookBanner(
-                    image: "conversations-with-friends.png",
+                    tag: "acumalaka1",
+                    bookImg: "conversations-with-friends.png",
                     bookName: "Conversations with Friends",
                     authorName: "Sally Rooney",
                     price: 12.90,
                   ),
                   BookBanner(
-                    image: "the-world-doesn't-require.png",
+                    tag: "acumalaka2",
+                    bookImg: "the-world-doesn't-require.png",
                     bookName: "The world doesn't require you",
                     authorName: "Rion Amilcar Scott",
                   ),
                   BookBanner(
-                    image: "the-last-widow.png",
+                    tag: "acumalaka3",
+                    bookImg: "the-last-widow.png",
                     bookName: "The last widow",
                     authorName: "Karin Slaughter",
                   ),
