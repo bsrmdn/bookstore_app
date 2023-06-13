@@ -24,7 +24,7 @@
 [![Product Screen Shot][product-screenshot]](https://github.com/bsrmdn/bookstore_app/blob/main/bookstore_app-example.png)
 
 A Flutter project that I made for my school project.
-I got this cool design from <a href="https://freebieflux.com/download-online-bookstore-app-freebie-by-laura-flint.html">here</a>
+I got this cool design from <a href="https://dribbble.com/lauraflint?ref=FreebieFlux">Laura Flint</a> in FreebieFlux <a href="https://freebieflux.com/download-online-bookstore-app-freebie-by-laura-flint.html">here</a>
 
 
 
@@ -68,6 +68,7 @@ Project Link: [https://github.com/bsrmdn/bookstore_app](https://github.com/bsrmd
 ## Acknowledgments
 
 * [FreebieFlux](https://freebieflux.com)
+* [Flutter Documentation](https://docs.flutter.dev)
 * [StackOverflow](https://stackoverflow.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
