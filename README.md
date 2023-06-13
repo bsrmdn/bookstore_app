@@ -24,16 +24,11 @@
 [![Product Screen Shot][product-screenshot]](https://github.com/bsrmdn/bookstore_app/blob/main/bookstore_app-example.png)
 
 A Flutter project that I made for my school project.
-
 I got this cool design from <a href="https://freebieflux.com/download-online-bookstore-app-freebie-by-laura-flint.html">here</a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Flutter][Flutter.dev]][Flutter-url]
 
@@ -73,6 +68,7 @@ Project Link: [https://github.com/bsrmdn/bookstore_app](https://github.com/bsrmd
 ## Acknowledgments
 
 * [FreebieFlux](https://freebieflux.com)
+* [StackOverflow](https://stackoverflow.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
